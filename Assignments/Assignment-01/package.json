@@ -10,6 +10,7 @@
     ]
   },
   "scripts": {
+    "start": "node a1.js",  // Add this line to run your script
     "copy-src": "copyfiles package.json src/**/* submission",
     "mkdir": "mkdirp submission",
     "eslint-to-file": "npm run eslint > submission/eslint.log 2>&1",
