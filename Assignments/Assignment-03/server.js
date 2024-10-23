@@ -78,13 +78,15 @@ app.get("/solutions/projects/sector-demo", (req, res) => {
 });
 */
 
+
 const express = require("express");
 const projectData = require("./modules/projects");
 
 const app = express();
-const HTTP_PORT = process.env.PORT || 3000; 
 
-app.use(express.static('public')); 
+const port = process.env.PORT || 3000;
+app.use(express.static('public')); // Make public folder static
+
 projectData
   .initialize()
   .then(() => {
@@ -97,13 +99,13 @@ projectData
   });
 
 // GET "/"
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'home.html'));
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/home.html"); // Serve home.html
 });
 
 // GET "/about"
-app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'about.html'));
+app.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/views/about.html"); // Serve about.html
 });
 
 // GET "/solutions/projects"
@@ -115,7 +117,7 @@ app.get("/solutions/projects", (req, res) => {
         res.json(projects);
       })
       .catch((err) => {
-        res.status(404).send("Error: Sector not found."); // 404 for sector not found
+        res.status(404).send(err); // 404 for sector not found
       });
   } else {
     projectData.getAllProjects()
@@ -123,7 +125,7 @@ app.get("/solutions/projects", (req, res) => {
         res.json(projects);
       })
       .catch((err) => {
-        res.status(500).send("Error: Couldn't retrieve projects"); // Internal Server Error
+        res.status(500).send(err); // Internal Server Error
       });
   }
 });
@@ -142,6 +144,6 @@ app.get("/solutions/projects/:id", (req, res) => {
 
 // Custom 404 error page
 app.use((req, res) => {
-    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+  res.status(404).sendFile(__dirname + "/views/404.html"); // Serve 404.html
 });
 
