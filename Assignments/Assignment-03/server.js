@@ -123,7 +123,7 @@ app.get("/solutions/projects", (req, res) => {
         res.json(projects);
       })
       .catch((err) => {
-        res.status(500).send("Error: Couldn't retrieve projects); // Internal Server Error
+        res.status(500).send("Error: Couldn't retrieve projects"); // Internal Server Error
       });
   }
 });
