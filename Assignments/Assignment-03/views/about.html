@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/main.css" rel="stylesheet">
+  <title>About - Climate Solutions</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="/">Climate Solutions</a>
-        <a class="active" href="/about">About</a>
-        <div class="dropdown">
-            <button class="dropbtn">Sector</button>
-            <div class="dropdown-content">
-                <a href="/solutions/projects?sector=sector1">Sector 1</a>
-                <a href="/solutions/projects?sector=sector2">Sector 2</a>
-                <a href="/solutions/projects?sector=sector3">Sector 3</a>
-            </div>
-        </div>
-    </nav>
-    <div class="container mx-auto">
-        <div class="hero">
-            <h1>About</h1>
-            <p>All about me...</p>
-        </div>
-        <div class="grid">
-            <div class="left-column">
-                <img src="path/to/image.jpg" alt="My Image">
-            </div>
-            <div class="right-column">
-                <p>Short blurb about yourself...</p>
-            </div>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar bg-base-100 py-4">
+    <div class="container mx-auto flex justify-between">
+      <div class="flex-1">
+        <a href="/" class="text-xl font-bold">Climate Solutions</a>
+      </div>
+      <div class="flex-none hidden md:block">
+        <ul class="menu menu-horizontal p-0 flex justify-between">
+          <li><a class="active" href="/about">About</a></li>
+          <li tabindex="0" class="dropdown dropdown-hover">
+            <a class="dropdown-toggle">Sector</a>
+            <ul class="p-2 bg-base-100 dropdown-content">
+              <li><a href="/404.html">Energy</a></li>
+              <li><a href="/solutions/projects?sector=Transportation">Transportation</a></li>
+              <li><a href="/404.html">Waste</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mx-auto">
+    <!-- Hero Component -->
+    <div class="hero bg-base-200 my-8">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">Main Character Intro😎</h1>
+          <p class="py-6">Hey! Let me share something interesting about myself✨</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+          <img src="https://adityatambe.vercel.app/static/media/adi-profile.4afd7f4ec7e5244eb580.png" alt="Personal Image" class="rounded-lg shadow-lg w-auto h-3/2">
+        </div>
+        <div class="text-center align-items-center pt-20 text-xl" >
+        <p>👋 Hi, I'm Shivani Vijay, a computer programming student at Seneca College. 👩🏻‍💻 Passionate about frontend & backend development and web technologies.✨</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
