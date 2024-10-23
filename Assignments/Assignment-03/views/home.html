@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="/css/parallax.css" rel="stylesheet" />
+    <title>Climate Solutions</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-base-500 py-4">
+      <div class="container mx-auto flex justify-between">
+        <div class="flex-1">
+          <a href="/" class="text-xl font-bold">Climate Solutions</a>
+        </div>
+        <div class="flex-none hidden md:block">
+          <ul class="menu menu-horizontal p-0 flex justify-between">
+            <li><a class="active" href="/about">About</a></li>
+            <li tabindex="0" class="dropdown dropdown-hover">
+              <a class="dropdown-toggle">Sector</a>
+              <ul class="p-2 bg-base-100 dropdown-content">
+                <li><a href="/404.html">Energy</a></li>
+                <li>
+                  <a href="/solutions/projects?sector=Transportation"
+                    >Transportation</a
+                  >
+                </li>
+                <li><a href="/404.html">Waste</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto  rounded-lg">
+     <!-- Hero Section -->      
+<div class="parallax bg-base-400  rounded-b flex flex-col items-center justify-center">
+  <div class="max-w-md text-center md:text-left"> 
+      <h1 class="text-5xl font-bold pt-20 text-gray-800">Explore Climate Solutions</h1>
+      <p class="py-4 text-gray-800">
+          Learn about various projects and how they are making a difference in tackling climate change.
+      </p>
+      <a href="/solutions/projects" class="btn btn-primary mb-40">View Projects</a>
+  </div>
+</div>
+
+
+<!-- Project Cards Section -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 pt-20 ">
+  <!-- Project 1 Card -->
+  <div class="card bg-base-100 shadow-xl">
+    <figure>
+      <img
+        src="https://drawdown.org/sites/default/files/solutions/solution_farmlandrestoration01.jpg"
+        alt="Project Image 1"
+      />
+    </figure>
+    <div class="card-body p-4">
+      <h2 class="card-title">
+        Project 1: Abandoned Farmland Restoration
+      </h2>
+      <p>
+        Restoration can bring degraded farmland back into productivity and
+        sequester carbon in the process.
+      </p>
+      <a href="/solutions/projects/1" class="btn btn-secondary"
+        >Learn More</a
+      >
+    </div>
+  </div>
+
+  <!-- Project 2 Card -->
+  <div class="card bg-base-100 shadow-xl mt-8">
+    <figure>
+      <img
+        src="https://drawdown.org/sites/default/files/solutions2020/solution_alternativecement02.jpg"
+        alt="Project Image 2"
+      />
+    </figure>
+    <div class="card-body p-4">
+      <h2 class="card-title">Project 2: Alternative Cement</h2>
+      <p>
+        Conventional cement production is a significant source of carbon
+        dioxide. Reformulation can reduce emissions by millions of metric
+        tons each year.
+      </p>
+      <a href="/solutions/projects/2" class="btn btn-secondary"
+        >Learn More</a
+      >
+    </div>
+  </div>
+
+  <!-- Project 3 Card -->
+  <div class="card bg-base-100 shadow-xl ">
+    <figure>
+      <img
+        src="https://drawdown.org/sites/default/files/solutions2020/solution_bicycle_infrastructure.jpg"
+        alt="Project Image 3"
+      />
+    </figure>
+    <div class="card-body p-4">
+      <h2 class="card-title">Project 3: Bicycle Infrastructure</h2>
+      <p>
+        Infrastructure is essential for supporting safe and abundant
+        bicycle use, which curbs emissions by reducing the need for
+        fossil-fuel-dependent transportation.
+      </p>
+      <a href="/solutions/projects/3" class="btn btn-secondary"
+        >Learn More
+      </a>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
