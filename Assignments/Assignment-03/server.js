@@ -84,7 +84,7 @@ const projectData = require("./modules/projects");
 
 const app = express();
 
-const port = process.env.PORT || 3000;
+const HTTP_PORT = process.env.PORT || 3000;
 app.use(express.static('public')); // Make public folder static
 
 projectData
