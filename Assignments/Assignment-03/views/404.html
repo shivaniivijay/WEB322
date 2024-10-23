@@ -7,23 +7,39 @@
     <title>404 Not Found</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="/">Climate Solutions</a>
-        <a href="/about">About</a>
-        <div class="dropdown">
-            <button class="dropbtn">Sector</button>
-            <div class="dropdown-content">
-                <a href="/solutions/projects?sector=sector1">Sector 1</a>
-                <a href="/solutions/projects?sector=sector2">Sector 2</a>
-                <a href="/solutions/projects?sector=sector3">Sector 3</a>
-            </div>
-        </div>
-    </nav>
-    <div class="container mx-auto">
-        <div class="hero">
-            <h1>404 - Page Not Found</h1>
-            <p>Sorry, the page you are looking for does not exist.</p>
-        </div>
+      <!-- Navbar Section -->
+  <nav class="navbar bg-base-100">
+    <div class="flex-1">
+      <a href="/" class="text-xl font-bold">Climate Solutions</a>
     </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal p-0">
+        <li><a href="/about">About</a></li>
+        <li tabindex="0">
+          <a>
+            Sector
+          </a>
+          <ul class="p-2 bg-base-100">
+            <li><a href="/solutions/projects?sector=Energy">Energy</a></li>
+            <li><a href="/solutions/projects?sector=Transportation">Transportation</a></li>
+            <li><a href="/solutions/projects?sector=Waste">Waste</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <!-- Main Content -->
+  <div class="container mx-auto">
+    <!-- Hero Component -->
+    <div class="hero bg-base-200 my-8">
+      <div class="hero-content text-center">
+        <div class="max-w-md">
+          <h1 class="text-5xl font-bold">404 - Page Not Found</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
